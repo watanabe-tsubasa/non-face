@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>置き楽チェッカー</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="card">
+        <h1>置き楽チェッカー</h1>
+        <p>NSクエリから抽出したexcelファイルを<br>アップロードしてください</p>
+        <form id="upload-form">
+            <label for="file-input" class="file-label">ファイルを選択</label>
+            <input type="file" id="file-input" name="file" accept=".csv" required />
+            <div id="file-name">選択されていません</div>
+            <button type="submit" id="upload-button">ファイルを処理</button>
+        </form>
+        <p id="status"></p>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>
