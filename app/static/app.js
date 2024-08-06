@@ -29,7 +29,7 @@ document.getElementById('upload-form').addEventListener('submit', async function
           const downloadUrl = URL.createObjectURL(blob);
           const a = document.createElement('a');
           a.href = downloadUrl;
-          a.download = '置き楽状況元データ.xlsx';
+          a.download = '非対面状況元データ.xlsx';
           document.body.appendChild(a);
           a.click();
           a.remove();

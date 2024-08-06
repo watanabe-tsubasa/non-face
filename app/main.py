@@ -69,7 +69,7 @@ async def process_xlsx(file: UploadFile = File(...)):
     
   return FileResponse(
     output_file_path,
-    filename="置き楽状況元データ.xlsx"
+    filename="非対面状況元データ.xlsx"
   )
 
 if __name__ == "__main__":
